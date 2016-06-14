@@ -1,0 +1,154 @@
+// Custom Navigation Bar
+
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+  font-family: 'Open Sans', serif;
+  .navbar-brand {
+    padding-top: 5px;
+    /*color: @brand-primary;
+    .script-font;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      color: darken(@brand-primary, 10%);
+    }*/
+  }
+  .navbar-collapse {
+    border-color: fade(white, 2%);
+  }
+  .navbar-toggle {
+    background-color: transparent;
+    border-color: transparent;
+    .icon-bar {
+      background-color: black;
+    }
+    &:not(.collapsed) {
+      background-color: transparent;
+      .icon-bar {
+        background-color: @brand-primary !important;
+      }
+    }
+    &:hover {
+      background-color: transparent;
+      .icon-bar {
+        background-color: black;
+      }
+    }
+    &:focus {
+      background-color: transparent;
+      .icon-bar {
+        background-color: black;
+      }
+    }
+    &:visited {
+      background-color: transparent;
+      .icon-bar {
+        background-color: black;
+      }
+    }
+  }
+  .nav {
+    li {
+      height: 55px;
+      a {
+
+        font-weight: 900;
+        letter-spacing: 1px;
+        color: black;
+        text-transform: uppercase;
+        &:hover,
+        &:focus {
+          border-bottom: 5px solid @brand-primary;
+          color: black;
+          outline: none;
+        }
+      }
+      &.active {
+        a {
+          color: black !important;
+          border-bottom: 5px solid @brand-primary;
+        }
+      }
+    }
+  }
+
+  .navbar-nav > .active > a {
+    background-color: transparent;
+  }
+  .navbar-nav > .active > a:hover,
+  .navbar-nav > .active > a:focus {
+    background-color: transparent;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-default {
+    .navbar-collapse {
+      background-color: rgba(255, 255, 255, 0.6);
+    }
+    .navbar-nav > .active > a {
+      color: black;
+      border-bottom: none;
+    }
+    .navbar-nav > .active > a:hover,
+    .navbar-nav > .active > a:focus {
+      color: @brand-primary;
+      border-bottom: none;
+    }
+
+    .nav {
+      li {
+        a {
+          &:hover,
+          &:focus {
+            color: @brand-primary;
+            border-bottom: none;
+          }
+        }
+        &.active {
+          a {
+            color: @brand-primary;
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-default {
+    background-color: transparent;
+    padding: 25px 0;
+    -webkit-transition: padding 0.3s;
+    -moz-transition: padding 0.3s;
+    transition: padding 0.3s;
+    border: none;
+    .navbar-brand {
+      font-size: 2em;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+    .navbar-nav > .active > a {
+      //border-radius: 3px;
+    }
+  }
+
+  .navbar-default.navbar-shrink {
+    //background-color: #fff;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    .navbar-brand {
+      font-size: 1.5em;
+    }
+  }
+}
+.navbar-default.navbar-shrink {
+  background-color: white;
+  box-shadow: 0 0 20px lightgrey;
+}
+
+
