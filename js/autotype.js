@@ -23,7 +23,7 @@
         // start position for x and iterator
             x = 30, i = 0;
         // Comic Sans?? Let's make it useful for something ;) w/ fallbacks
-        ctx.font = "55px Rock Salt";
+        ctx.font = "80px Architects Daughter";
 
 
         // thickness of the line
