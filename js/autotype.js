@@ -19,10 +19,12 @@
         // the text we will draw
             txt = " Patrícia Lourenço",
 
+
         // start position for x and iterator
             x = 30, i = 0;
         // Comic Sans?? Let's make it useful for something ;) w/ fallbacks
-        ctx.font = "60px Rock Salt";
+        ctx.font = "55px Rock Salt";
+
 
         // thickness of the line
         ctx.lineWidth = 1;

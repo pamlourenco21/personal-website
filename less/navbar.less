@@ -4,16 +4,10 @@
   background-color: transparent;
   border-color: transparent;
   font-family: 'Open Sans', serif;
+  padding: 5px;
   .navbar-brand {
     padding-top: 5px;
-    /*color: @brand-primary;
-    .script-font;
-    &:hover,
-    &:focus,
-    &:active,
-    &.active {
-      color: darken(@brand-primary, 10%);
-    }*/
+    background: url("../img/wl.png") no-repeat center;
   }
   .navbar-collapse {
     border-color: fade(white, 2%);
@@ -22,7 +16,7 @@
     background-color: transparent;
     border-color: transparent;
     .icon-bar {
-      background-color: black;
+      background-color: white;
     }
     &:not(.collapsed) {
       background-color: transparent;
@@ -33,42 +27,42 @@
     &:hover {
       background-color: transparent;
       .icon-bar {
-        background-color: black;
+        background-color: white;
       }
     }
     &:focus {
       background-color: transparent;
       .icon-bar {
-        background-color: black;
+        background-color: white;
       }
     }
     &:visited {
       background-color: transparent;
       .icon-bar {
-        background-color: black;
+        background-color: white;
       }
     }
   }
   .nav {
     li {
-      height: 55px;
+      //height: 55px;
       a {
 
-        font-weight: 900;
-        letter-spacing: 1px;
-        color: black;
+        //font-weight: 900;
+        //letter-spacing: 1px;
+        color: white;
         text-transform: uppercase;
         &:hover,
         &:focus {
-          border-bottom: 5px solid @brand-primary;
-          color: black;
+          border-bottom: 2px solid @brand-primary;
+          color: white;
           outline: none;
         }
       }
       &.active {
         a {
           color: black !important;
-          border-bottom: 5px solid @brand-primary;
+          border-bottom: 2px solid @brand-primary;
         }
       }
     }
@@ -82,11 +76,16 @@
     background-color: transparent;
   }
 }
+.navbar-default.navbar-shrink{
+  .navbar-brand{
+    background: url("../img/logo.png") no-repeat center;
+  }
+}
 
 @media (max-width: 767px) {
   .navbar-default {
     .navbar-collapse {
-      background-color: rgba(255, 255, 255, 0.6);
+      background-color: rgba(0, 0, 0, 0.8);
     }
     .navbar-nav > .active > a {
       color: black;
@@ -116,12 +115,76 @@
       }
     }
   }
+  .navbar-default.navbar-shrink {
+    .navbar-collapse{
+      background-color: white;
+      //box-shadow: 0 0 20px lightgrey;
+    }
+    .navbar-toggle {
+      background-color: transparent;
+      border-color: transparent;
+      .icon-bar {
+        background-color: black;
+      }
+      &:not(.collapsed) {
+        background-color: transparent;
+        .icon-bar {
+          background-color: @brand-primary !important;
+        }
+      }
+      &:hover {
+        background-color: transparent;
+        .icon-bar {
+          background-color: black;
+        }
+      }
+      &:focus {
+        background-color: transparent;
+        .icon-bar {
+          background-color: black;
+        }
+      }
+      &:visited {
+        background-color: transparent;
+        .icon-bar {
+          background-color: black;
+        }
+      }
+    }
+
+    .nav {
+      li {
+        height: 52px;
+        a {
+
+          //font-weight: 900;
+          //letter-spacing: 1px;
+          color: black;
+          text-transform: uppercase;
+          &:hover,
+          &:focus {
+            //border-bottom: 2px solid @brand-primary;
+            color: black;
+            outline: none;
+          }
+        }
+        &.active {
+          a {
+            color: black !important;
+            //border-bottom: 2px solid @brand-primary;
+          }
+        }
+      }
+    }
+  }
 }
+
+
 
 @media (min-width: 768px) {
   .navbar-default {
     background-color: transparent;
-    padding: 25px 0;
+    //padding: 5px;
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
     transition: padding 0.3s;
@@ -139,7 +202,7 @@
 
   .navbar-default.navbar-shrink {
     //background-color: #fff;
-    padding: 10px 0;
+    padding: 0;
     border-bottom: 1px solid #eee;
     .navbar-brand {
       font-size: 1.5em;
@@ -149,6 +212,29 @@
 .navbar-default.navbar-shrink {
   background-color: white;
   box-shadow: 0 0 20px lightgrey;
-}
+  .nav {
+    li {
+      height: 52px;
+      a {
 
+        //font-weight: 900;
+        //letter-spacing: 1px;
+        color: black;
+        text-transform: uppercase;
+        &:hover,
+        &:focus {
+          //border-bottom: 2px solid @brand-primary;
+          color: black;
+          outline: none;
+        }
+      }
+      &.active {
+        a {
+          color: black !important;
+          //border-bottom: 2px solid @brand-primary;
+        }
+      }
+    }
+  }
+}
 
