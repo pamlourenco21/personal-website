@@ -21,9 +21,12 @@
 
 
         // start position for x and iterator
-            x = 30, i = 0;
-        // Comic Sans?? Let's make it useful for something ;) w/ fallbacks
+            x = 0, i = 0;
+
+        //font
         ctx.font = "80px Architects Daughter";
+
+
 
 
         // thickness of the line
@@ -37,6 +40,7 @@
 
         // some color, lets use a black pencil
         ctx.strokeStyle = ctx.fillStyle = "#daa520";
+
         (function loop() {
             // clear canvas for each frame
             ctx.clearRect(x, -15, 30, 15);

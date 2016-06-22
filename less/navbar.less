@@ -2,6 +2,7 @@
 
 //Navbar-default
 
+
 .navbar-default {
   background-color: transparent;
   border-color: transparent;
@@ -9,6 +10,10 @@
   .navbar-brand {
     background: url("../img/wl.png") no-repeat center;
   }
+  #name-nav {
+      display: none;
+
+   }
   .navbar-collapse {
     border-color: transparent;
   }
@@ -84,7 +89,14 @@
   .navbar-brand{
     background: url("../img/logo.png") no-repeat center;
   }
-  .nav {
+  #nav-name {
+    display: inline-block;
+  }
+  #name-nav {
+    display: block;
+    color: @brand-primary;
+  }
+    .nav {
     li {
       a {
         color: black;

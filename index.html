@@ -47,7 +47,11 @@
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                   <i class="fa fa-bars" aria-hidden="true"></i>
               </button>
-                <a class="navbar-brand page-scroll" href="#page-top"></a>
+                <div id="nav-name">
+                    <a class="navbar-brand page-scroll" href="#page-top"></a>
+                    <p id="name-nav" class="wow bounceInRight" data-wow-delay="0.2s">Patrícia Lourenço</p>
+                </div>
+
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
@@ -69,11 +73,14 @@
     <!-- Header -->
     <header>
         <div class="container">
-            <div id="header">
-                <div id="header-box">
-                    <canvas id="header-canvas" width="762"></canvas>
-                    <div id="header-subtitle">Bem vindo ao meu website!</div>
-                    <a href="#services" id="header-btn" class="page-scroll btn">Mais sobre mim</a>
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1" id="header">
+                    <div id="header-box">
+                        <canvas id="header-canvas" width="762"></canvas>
+                        <div id="header-subtitle">Bem vindo ao meu website!</div>
+                        <a href="#services" id="header-btn" class="page-scroll btn">Mais sobre mim</a>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -84,32 +91,40 @@
     <section id="about" class="home-section bg-white">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 col-md-offset-2">
+
                     <div class="section-heading text-center">
                         <div class="wow bounceInUp" data-wow-delay="0.2s">
                           <h2 class="heading-section">Patrícia Lourenço</h2>
                         </div>
                     </div>
-                </div>
+
             </div>
         </div>
 
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <div id="img_abt">
-                        <img src="img/pl.jpg" class="img-responsive img-circle wow bounceInLeft" alt="">
-                    </div>
 
+                <!--Image and Skillbars-->
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="img-skill">
+
+                    <!--Image about-->
+                    <div id="img_abt">
+                        <img src="img/pl.jpg" class="img-responsive img-rounded wow bounceInLeft" alt="Patrícia Lourenço">
+                    </div>
+                    <!--/Image about-->
+
+                    <!--Skillbars-->
                     <div id="SkillBox" class="wow bounceInLeft" data-wow-delay="0.2s">
-                        <!--Skillbar HTML-->
                         <div class="SkillBar">
+
+                            <!--Skillbar HTML-->
                             <div id="Skill-HTML">
                                 <span class="Skill-Area ">HTML</span>
                                 <span class="PercentText ">100%</span>
                             </div>
                         </div>
                         <!--/Sillbar HTML-->
+
                         <!--Skillbar CSS-->
                         <div class="SkillBar">
                             <div id="Skill-CSS">
@@ -118,6 +133,7 @@
                             </div>
                         </div>
                         <!--/Skillbar CSS-->
+
                         <!--Skillbar JS-->
                         <div class="SkillBar">
                             <div id="Skill-JS">
@@ -127,9 +143,12 @@
                         </div>
                         <!--/Skillbar JS-->
                     </div>
+                    <!--/Skillbars-->
                 </div>
+                <!--/Image and Skillbars-->
 
-                <div class="col-md-6">
+                <!--Text about and social-->
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div id="txt_abt" class="wow bounceInRight text-center" data-wow-delay="0.4s">
                         <p>
                         Desde cedo sempre tive um grande fascínio pelas novas tecnologias, nomeadamente por
@@ -155,6 +174,7 @@
                         tema.
                         </p>
 
+                        <!--Social buttons-->
                         <div id="social-abt">
                             <ul class="list-inline social-buttons">
                                 <li>
@@ -168,22 +188,30 @@
                                 </li>
                             </ul>
                         </div>
+                        <!--/Social buttons-->
+
                     </div>
                 </div>
+                <!--/Text about and social-->
             </div>
+            <!--/.row-->
         </div>
+        <!--/.container-->
     </section>
+    <!--/Section about-->
 
     <!-- Portfolio Grid Section -->
     <section id="portfolio" class="bg-light-gray">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <div class="col-lg-12 section-heading text-center">
+                    <h2 class="heading-section">Portfolio</h2>
                 </div>
             </div>
+        </div>
+        <div class="container">
             <div class="row">
+
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
@@ -191,13 +219,14 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/roundicons.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/img-prt.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Round Icons</h4>
-                        <p class="text-muted">Graphic Design</p>
+                        <h4>Patrícia Lourenço</h4>
+                        <p class="text-muted">Web Design</p>
                     </div>
                 </div>
+
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
@@ -212,6 +241,7 @@
                         <p class="text-muted">Website Design</p>
                     </div>
                 </div>
+
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
@@ -226,6 +256,7 @@
                         <p class="text-muted">Website Design</p>
                     </div>
                 </div>
+
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
@@ -240,6 +271,7 @@
                         <p class="text-muted">Website Design</p>
                     </div>
                 </div>
+
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
@@ -254,6 +286,7 @@
                         <p class="text-muted">Website Design</p>
                     </div>
                 </div>
+
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
@@ -268,6 +301,7 @@
                         <p class="text-muted">Website Design</p>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -537,7 +571,7 @@
                             <!-- Project Details Go Here -->
                             <h2>Project Name</h2>
                             <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/roundicons-free.png" alt="">
+                            <img class="img-responsive img-centered" src="img/portfolio/img-prt-preview.png" alt="">
                             <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                             <p>
                                 <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>

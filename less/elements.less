@@ -14,8 +14,27 @@ p {
   line-height: 1.75;
 }
 
-.heading-section{
-  font-size: 30px;
+.heading-section {
+  font-size: 40px;
+  //margin-bottom: 50px;
+  margin-top: 64px;
+
+}
+
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+  .heading-section {
+    margin-bottom: 20px;
+    margin-top: 80px;
+  }
+
+}
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+  .heading-section {
+    margin-bottom: 20px;
+    margin-top: 80px;
+    font-size: 40px;
+  }
+
 }
 
 // Partners

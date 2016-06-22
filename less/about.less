@@ -1,47 +1,175 @@
 //About section
 
-#about {
-  padding-top: 80px;
-  #img_abt {
-    width: 30%;
-    height: 30%;
-    min-width: 150px;
-    margin: 0 auto;
-  }
 
-  #txt_abt {
-    text-align: justify;
-    //font-family: 'Open Sans', serif;
-    padding-top: 30px;
-  }
 
-  @media (max-width: @screen-md) {
-    #img_abt {
-      width: 30%;
-      height: 30%;
-      padding-bottom: 40px;
+
+//@Media queries
+
+//Screen large
+@media (min-width: @screen-lg-min) {
+  #about {
+    #img-skill {
+      margin-top: 10px;
     }
-  }
 
-  @media (max-width: @screen-xs) {
+    #img_abt {
+      width: 40%;
+      height: 60%;
+      min-width: 150px;
+      margin: 0 auto;
+    }
+
     #txt_abt {
       text-align: justify;
+      p {
+        font-size: 16px;
+      }
+    }
+
+    #social-abt {
+      text-align: center;
+      margin-top: 20px;
+      .social-buttons {
+        margin-bottom: 0;
+        li {
+          a {
+            display: block;
+            background-color: @brand-primary;
+            height: 40px;
+            width: 40px;
+            border-radius: 3px;
+            font-size: 20px;
+            line-height: 40px;
+            color: white;
+            outline: none;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s;
+            &:hover,
+            &:focus,
+            &:active {
+              background-color: white;
+              color: @brand-primary;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+//Screen medium
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+  #about {
+    margin-top: 60px;
+    #img-skill {
+      margin-top: 5px;
     }
 
     #img_abt {
-      width: 30%;
-      height: 30%;
-      padding-bottom: 40px;
+      width: 45%;
+      height: 60%;
+      min-width: 150px;
+      margin: 0 auto;
+    }
 
+    #txt_abt {
+      text-align: justify;
+      p {
+        //font-size: 16px;
+      }
+    }
+
+    #social-abt {
+      text-align: center;
+      margin-top: 55px;
+      .social-buttons {
+        margin-bottom: 0;
+        li {
+          a {
+            display: block;
+            background-color: @brand-primary;
+            height: 40px;
+            width: 40px;
+            border-radius: 3px;
+            font-size: 20px;
+            line-height: 40px;
+            color: white;
+            outline: none;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s;
+            &:hover,
+            &:focus,
+            &:active {
+              background-color: white;
+              color: @brand-primary;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+}
+
+//Secreen small
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+  #about {
+    #img-skill {
+      margin-top: 10px;
+    }
+
+    #img_abt {
+      width: 40%;
+      height: 40%;
+      min-width: 150px;
+      margin: 0;
+    }
+
+    #txt_abt {
+      text-align: justify;
+      p {
+        //font-size: 16px;
+      }
+    }
+
+    #social-abt {
+      text-align: center;
+      margin-top: 20px;
+      .social-buttons {
+        margin-bottom: 0;
+        li {
+          a {
+            display: block;
+            background-color: @brand-primary;
+            height: 40px;
+            width: 40px;
+            border-radius: 3px;
+            font-size: 20px;
+            line-height: 40px;
+            color: white;
+            outline: none;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s;
+            &:hover,
+            &:focus,
+            &:active {
+              background-color: white;
+              color: @brand-primary;
+            }
+          }
+        }
+      }
     }
   }
 }
-#heading-about {
-  padding-bottom: 60px;
-  text-transform: none;
-  font-family: 'Open Sans', serif;
+
+//Screen xsmal
+@media (min-width: @screen-xs-min) and (max-width: @screen-xs-max) {
+  
 }
 
-#social-abt {
-  text-align: center;
-}
