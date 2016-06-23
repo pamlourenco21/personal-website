@@ -8,12 +8,13 @@
   border-color: transparent;
   padding: 0;
   .navbar-brand {
-    background: url("../img/wl.png") no-repeat center;
-  }
-  #name-nav {
+    background: url("../img/wl.png") no-repeat left;
+    #pl {
       display: none;
 
-   }
+
+    }
+  }
   .navbar-collapse {
     border-color: transparent;
   }
@@ -87,15 +88,17 @@
   background-color: white;
   box-shadow: 0 0 20px lightgrey;
   .navbar-brand{
-    background: url("../img/logo.png") no-repeat center;
+    background: url("../img/logo.png") no-repeat left;
+    #pl {
+      display: inline;
+      color: @brand-primary;
+      font-family: 'Architects Daughter', sans-serif;
+
+
+    }
+
   }
-  #nav-name {
-    display: inline-block;
-  }
-  #name-nav {
-    display: block;
-    color: @brand-primary;
-  }
+
     .nav {
     li {
       a {
@@ -208,3 +211,4 @@
     }
   }
 }
+
