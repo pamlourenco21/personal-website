@@ -1,59 +1,66 @@
 //About section
+#img_abt {
+  max-width: 180px;
+}
+#txt_abt {
+  text-align: justify;
+}
 
-
-
+#social-abt {
+  text-align: center;
+  margin-top: 20px;
+  .social-buttons {
+    margin-bottom: 0;
+    li {
+      a {
+        display: block;
+        background-color: transparent;
+        height: 40px;
+        width: 40px;
+        border: 1px solid @brand-primary;
+        border-radius: 14px;
+        font-size: 20px;
+        line-height: 40px;
+        color: @brand-primary;
+        outline: none;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: @brand-primary;
+          color: white;
+        }
+      }
+    }
+  }
+}
 
 //@Media queries
 
 //Screen large
 @media (min-width: @screen-lg-min) {
   #about {
+    margin-top: 60px;
     #img-skill {
-      margin-top: 10px;
+      margin-top: 5px;
+      margin-left: 0;
     }
 
     #img_abt {
-      width: 40%;
+      width: 60%;
       height: 60%;
-      min-width: 150px;
-      margin: 0 auto;
+      margin-top: 8px;
+      margin-left: 185px;
+
     }
 
     #txt_abt {
-      text-align: justify;
-      p {
-        font-size: 16px;
-      }
-    }
-
-    #social-abt {
-      text-align: center;
-      margin-top: 20px;
-      .social-buttons {
-        margin-bottom: 0;
-        li {
-          a {
-            display: block;
-            background-color: @brand-primary;
-            height: 40px;
-            width: 40px;
-            border-radius: 10px;
-            font-size: 20px;
-            line-height: 40px;
-            color: white;
-            outline: none;
-            -webkit-transition: all 0.3s;
-            -moz-transition: all 0.3s;
-            transition: all 0.3s;
-            &:hover,
-            &:focus,
-            &:active {
-              background-color: white;
-              color: @brand-primary;
-            }
-          }
-        }
-      }
+      margin-top: 30px;
+      margin-left: 0;
+      padding-right: 30px;
+      padding-left: 0;
     }
   }
 
@@ -65,57 +72,28 @@
     margin-top: 60px;
     #img-skill {
       margin-top: 5px;
+      margin-left: 0;
     }
 
     #img_abt {
-      width: 45%;
+      width: 60%;
       height: 60%;
-      min-width: 150px;
-      margin: 0 auto;
+      margin-top: 8px;
+      margin-left: 130px;
+
     }
 
     #txt_abt {
-      text-align: justify;
-      p {
-        //font-size: 16px;
-      }
-    }
-
-    #social-abt {
-      text-align: center;
-      margin-top: 55px;
-      .social-buttons {
-        margin-bottom: 0;
-        li {
-          a {
-            display: block;
-            background-color: @brand-primary;
-            height: 40px;
-            width: 40px;
-            border-radius: 3px;
-            font-size: 20px;
-            line-height: 40px;
-            color: white;
-            outline: none;
-            -webkit-transition: all 0.3s;
-            -moz-transition: all 0.3s;
-            transition: all 0.3s;
-            &:hover,
-            &:focus,
-            &:active {
-              background-color: white;
-              color: @brand-primary;
-            }
-          }
-        }
-      }
+      margin-left: 0;
+      padding-right: 30px;
+      padding-left: 0;
     }
   }
 
-
 }
 
-//Secreen small
+//Screen small
+
 @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
   #about {
     #img-skill {
@@ -123,53 +101,30 @@
     }
 
     #img_abt {
-      width: 40%;
-      height: 40%;
-      min-width: 150px;
+      width: 30%;
+      height: 30%;
       margin: 0;
-    }
-
-    #txt_abt {
-      text-align: justify;
-      p {
-        //font-size: 16px;
-      }
-    }
-
-    #social-abt {
-      text-align: center;
-      margin-top: 20px;
-      .social-buttons {
-        margin-bottom: 0;
-        li {
-          a {
-            display: block;
-            background-color: @brand-primary;
-            height: 40px;
-            width: 40px;
-            border-radius: 3px;
-            font-size: 20px;
-            line-height: 40px;
-            color: white;
-            outline: none;
-            -webkit-transition: all 0.3s;
-            -moz-transition: all 0.3s;
-            transition: all 0.3s;
-            &:hover,
-            &:focus,
-            &:active {
-              background-color: white;
-              color: @brand-primary;
-            }
-          }
-        }
-      }
     }
   }
 }
 
 //Screen xsmal
-@media (min-width: @screen-xs-min) and (max-width: @screen-xs-max) {
-  
+@media (max-width: @screen-xs-max) {
+
+  #about {
+
+    #img_abt {
+      width: 50%;
+      height: 40%;
+      margin: 0 auto;
+    }
+
+    #txt_abt {
+      text-align: justify;
+    }
+
+
+  }
+
 }
 

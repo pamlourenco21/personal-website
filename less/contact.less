@@ -1,10 +1,15 @@
 // Contact Section
 
-section#contact {
-  background-color: @gray-darkest;
-  background-image: url('../img/map-image.png');
-  background-position: center;
-  background-repeat: no-repeat;
+#contfoot {
+  margin: 0;
+}
+
+
+#contact {
+  background-color: rgba(0, 0, 0, 0.6);
+
+
+
   .section-heading {
     color: white;
   }
@@ -43,5 +48,33 @@ section#contact {
   }
   .text-danger {
     color: @brand-danger;
+  }
+}
+
+.btn-xl {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  margin: 20px;
+}
+
+
+
+// Footer
+
+#footer {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+
+  padding: 25px 0;
+  text-align: center;
+  span.copyright {
+    line-height: 40px;
+    text-transform: none;
+  }
+  ul.quicklinks {
+    margin-bottom: 0;
+    line-height: 40px;
+    text-transform: none;
   }
 }
