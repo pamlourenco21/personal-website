@@ -21,7 +21,9 @@
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
-    <script>new WOW().init();</script>
+    <script>
+        new WOW().init();
+    </script>
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
           integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
@@ -83,7 +85,7 @@
 
 
 <!----------------------------------------------------- Header -------------------------------------------------------->
-<section id="header" data-parallax="scroll" data-image-src="img/parallax/header-bg.jpeg">
+<header id="header" data-parallax="scroll" data-image-src="img/parallax/header-bg.jpeg">
 
     <div class="container">
 
@@ -112,7 +114,7 @@
 
     </div>
 
-</section>
+</header>
 
 
 <!-----------------------------------------------------Section About -------------------------------------------------->
@@ -174,13 +176,13 @@
                     </div>
 
 
-                    <!---------------- Skillbar JS ----------------->
+                    <!---------------- Skillbar UxD ----------------->
                     <div class="SkillBar">
 
-                        <div id="Skill-JS">
+                        <div id="Skill-UxD">
 
-                            <span class="Skill-Area ">Javascript</span>
-                            <span class="PercentText ">20%</span>
+                            <span class="Skill-Area ">UxD</span>
+                            <span class="PercentText ">65%</span>
 
                         </div>
 
@@ -224,12 +226,15 @@
 
                     <ul class="list-inline social-buttons">
 
-                        <li><a href="https://facebook.com/pamlourenco21"><i class="fa fa-facebook"></i></a></li>
+                        <li><a target="_blank" href="https://facebook.com/pamlourenco21"><i class="fa fa-facebook"></i></a></li>
 
-                        <li><a href="https://instagram.com/pamlourenco21/"><i class="fa fa-instagram"></i></a></li>
+                        <li><a target="_blank" href="https://instagram.com/pamlourenco21/"><i class="fa fa-instagram"></i></a></li>
 
-                        <li><a href="https://twitter.com/pamlourenco21"><i class="fa fa-twitter"></i></a></li>
+                        <li><a target="_blank" href="https://twitter.com/pamlourenco21"><i class="fa fa-twitter"></i></a></li>
 
+                        <li><a target="_blank" href="https://pt.pinterest.com/pamlourenco21/"><i class="fa fa-pinterest-p"></i></a></li>
+
+                        <li><a target="_blank" href="https://github.com/pamlourenco21"><i class="fa fa-github-alt"></i></a></li>
                     </ul>
 
                 </div>
@@ -254,13 +259,12 @@
             <!------------------------------------------ Web Design ----------------------------------------->
             <div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12">
 
-                <a href="#portfolio" class="interest-link">
+                <a href="#portfolio" class="interest-link page-scroll">
 
-                    <div id="webdes" class="interests" data-parallax="scroll" data-image-src="img/parallax/webdes.jpg">
-
+                    <div id="webdes" class="interests" data-parallax="scroll" data-speed="0.5" data-image-src="img/parallax/webdes.jpg">
                         <h4 class="txt-interest">Web Design</h4>
                         <br/>
-                        <p class="txt-interest">Gosto muito alguns dos meus trabalhos no portfolio.</p>
+                        <p class="txt-interest">Clica para ver alguns dos meus trabalhos.</p>
 
                     </div>
 
@@ -271,13 +275,20 @@
             <!------------------------------------------ Cats ---------------------------------------------->
             <div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12">
 
-                <a href="https://www.instagram.com/2littleballoffur/" class="interest-link">
+                <a target="_blank" href="https://www.instagram.com/2littleballoffur/" class="interest-link">
 
-                    <div id="cats" class="interests" data-parallax="scroll" data-image-src="img/parallax/cats.jpg">
+                    <div id="cats" class="interests" data-parallax="scroll" data-speed="0.2" data-image-src="img/parallax/cats.jpg">
 
-                        <h4 class="txt-interest">Gatos</h4>
+                        <h4 class="txt-interest">Mia & Kika</h4>
                         <br/>
-                        <p class="txt-interest">Gosto muito criei um instagram para partilhar fotos que tiro.</p>
+                        <p class="txt-interest">As minhas companheiras! As suas aventuras podem ser seguidas no
+                            Instagram!
+                            <br/>
+                            <i class="fa fa-instagram fa-3x"></i>
+                        </p>
+
+
+
 
                     </div>
 
@@ -294,14 +305,14 @@
             <!--------------------------------- Fashion  ------------------------------------>
             <div class=" col col-lg-6 col-md-6 col-sm-6 col-xs-12">
 
-                <a href="#" class="interest-link">
+                <a class="interest-link">
 
-                    <div id="fashion" class="interests" data-parallax="scroll" data-image-src="img/parallax/fashion.jpeg">
+                    <div id="fashion" class="interests" data-parallax="scroll" data-speed="0.8" data-image-src="img/parallax/fashion.jpeg">
 
                         <h4 class="txt-interest">Moda </h4>
                         <br/>
-                        <p class="txt-interest">Gosto muito de estar atualizada sobre as novas
-                            tendencias e adaptar ao meu estilo.</p>
+                        <p class="txt-interest">Gosto de estar atualizada sobre as novas
+                            tendências e adaptar ao meu estilo.</p>
                     </div>
 
                 </a>
@@ -311,9 +322,9 @@
             <!--------------------------------- Tech  ------------------------------------>
             <div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12">
 
-                <a href="#" class="interest-link">
+                <a class="interest-link">
 
-                    <div id="foto" class="interests" data-parallax="scroll" data-image-src="img/parallax/tech.jpg">
+                    <div id="foto" class="interests" data-parallax="scroll" data-speed="0.5" data-image-src="img/parallax/tech.jpg">
 
                         <h4 class="txt-interest">Tecnologia</h4>
                         <br/>
@@ -563,7 +574,7 @@
                     <!----------------------------------- Be part of my story --------------------------------------->
                     <li class="timeline-inverted">
 
-                        <a href="#contact">
+                        <a href="#contact" class="page-scroll">
 
                             <div class="timeline-image">
 
@@ -589,18 +600,28 @@
 
 </section>
 
-<section id="partners">
+<section id="partners" data-parallax="scroll" data-image-src="img/parallax/partners.jpg" data-speed="0">
 
     <div class="container">
 
         <div class="row">
 
-            <!------------------------------------------ Web Design ----------------------------------------->
+            <div class="section-heading text-center">
+
+                <h2 class="heading-section">Partners</h2>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <!------------------------------------------ Filipe Garcia ----------------------------------------->
             <div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12">
 
-                <a href="" class="">
+                <a target="_blank" href="http://filipe-garcia.com/">
 
-                    <div id="" class="partners" data-parallax="scroll" data-image-src="img/parallax/webdes.jpg">
+                    <div class="partners">
                       <img src="img/partners/fgws.png" class="img-responsive">
 
 
@@ -610,12 +631,12 @@
 
             </div>
 
-            <!------------------------------------------ Cats ---------------------------------------------->
+            <!------------------------------------------ i.Think ---------------------------------------------->
             <div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12">
 
-                <a href="" class="">
+                <a target="_blank" href="http://ithink.pt/" class="">
 
-                    <div id="" class="partners" data-parallax="scroll" data-image-src="img/parallax/webdes.jpg">
+                    <div id="" class="partners">
                         <img src="img/partners/itlogo.png" class="img-responsive">
 
 
@@ -651,7 +672,7 @@
 
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 work work80">
-                <a href="#">
+                <a target="_blank">
                     <img src="img/portfolio/site.png" class="img-responsive img-work grow">
                     <div class="txt-work80">
                         <h5>Meu website</h5>
@@ -661,7 +682,7 @@
             </div>
 
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 work work20">
-                <a href="#">
+                <a target="_blank">
                     <img src="img/portfolio/patlogo.png" class="img-responsive img-work grow">
                     <div class="txt-work20">
                         <h5>Meu Logotipo</h5>
@@ -671,7 +692,7 @@
             </div>
 
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 work work80">
-                <a href="#">
+                <a target="_blank" href="#">
                     <img src="img/portfolio/site2.png" class="img-responsive img-work grow">
                     <div class="txt-work80">
                         <h5>Meu novo website</h5>
@@ -681,7 +702,7 @@
             </div>
 
             <div id="work4" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 work work20">
-                <a href="#">
+                <a target="_blank" href="http://filipe-garcia.com/">
                     <img src="img/portfolio/fglogo.png" class="img-responsive img-work grow">
                     <div class="txt-work20">
                         <h5>Logotipo</h5>
@@ -692,18 +713,20 @@
             </div>
 
             <div id="work5" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 work work80">
-                <a href="#">
-                    <img src="img/portfolio/site3.png" class="img-responsive img-work grow">
+                <a target="_blank">
+                    <img id="img-work5" src="img/portfolio/site3.png" class="img-responsive img-work grow">
+
                     <div class="txt-work80">
+
                         <h5>Website</h5>
                         <p>i.Think</p>
-                        <p>Em construção</p>
+                        <p>Em construção <i class="wow rotateOut infinite fa fa-spinner" aria-hidden="true"></i></p>
                     </div>
                 </a>
             </div>
 
             <div id="work6" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 work work20">
-                <a href="#">
+                <a target="_blank" href="http://bruno-melo.com/">
                     <img src="img/portfolio/bmlogo.png" class="img-responsive img-work grow">
                     <div class="txt-work20">
                         <h5>Logotipo</h5>
@@ -723,7 +746,7 @@
 
 
 <!--------------------------------------------- Footer & Contact Section ------------------------------------------>
-<section id="contfoot" data-parallax="scroll" data-image-src="img/parallax/header-bg.jpeg">
+<section id="contfoot" data-parallax="scroll" data-image-src="img/parallax/contact.jpg">
 
     <!---------------------------------------- Contact -------------------------------------------------->
     <div id="contact">
@@ -736,7 +759,7 @@
                 <div class="col-lg-12 text-center">
 
                     <h2 class="section-heading heading-section">Contacto</h2>
-                    <h3 class="section-subheading text-muted"></h3>
+
 
                 </div>
 
@@ -810,141 +833,21 @@
 
                     </form>
 
-                </div>
+                    <div id="social-cont">
 
-            </div>
+                        <ul class="list-inline social-buttons">
 
-        </div>
+                            <li><a target="_blank" href="https://facebook.com/pamlourenco21"><i class="fa fa-facebook"></i></a></li>
 
-    </div>
+                            <li><a target="_blank" href="https://instagram.com/pamlourenco21/"><i class="fa fa-instagram"></i></a></li>
 
+                            <li><a target="_blank" href="https://twitter.com/pamlourenco21"><i class="fa fa-twitter"></i></a></li>
 
-    <!------------------------------------------- Footer ------------------------------------------------>
-    <div id="footer">
+                            <li><a target="_blank" href="https://pt.pinterest.com/pamlourenco21/"><i class="fa fa-pinterest-p"></i></a></li>
 
-        <div class="row">
-
-            <div class="col-md-4">
-
-                <span class="copyright">Copyright &copy;
-                    <a href="#">Patrícia Lourenço </a>2016
-                </span>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-</section>
-
-<!----------------------------------------------------- Portfolio Modals ------------------------------------------->
-
-<!---------------------------------------- Portfolio Modal 1 --------------------------------------------------->
-<!-- <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-
-    <div class="modal-content">
-
-        <div class="close-modal" data-dismiss="modal">
-
-            <div class="lr">
-
-                <div class="rl"></div>
-
-            </div>
-
-        </div>
-
-        <div class="container">
-
-            <div class="row">
-
-                <div class="col-lg-8 col-lg-offset-2">
-
-                    <div class="modal-body">
-
-                        <!------------------------------ Project Details Go Here ---------------------------->
-<!-- <h2>Website</h2>
-
- <p class="item-intro text-muted">Patrícia Lourenço</p>
-
- <img class="img-responsive img-centered" src="img/portfolio/pl-website-pvw.jpg" alt="">
-
- <p>Website pessoal, bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-     bla bla bla bla bla bla bla bla bla bla bla bla</p>
-
- <ul class="list-inline">
-
-     <li>Data: Dezembro 2015</li>
-     <li>Cliente: Patrícia Lourenço</li>
-     <li>Categoria: Web design</li>
-
- </ul>
-
- <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>
-     Close Project
-
- </button>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>-->
-
-<!-------------------------------------------- Portfolio Modal 2 --------------------------------------------->
-<!--<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-
-    <div class="modal-content">
-
-        <div class="close-modal" data-dismiss="modal">
-
-            <div class="lr">
-
-                <div class="rl"></div>
-
-            </div>
-
-        </div>
-
-        <div class="container">
-
-            <div class="row">
-
-                <div class="col-lg-8 col-lg-offset-2">
-
-                    <div class="modal-body">
-
-                        <h2>Website</h2>
-
-                        <p class="item-intro text-muted">Patrícia Lourenço</p>
-
-                        <img class="img-responsive img-centered" src="img/portfolio/new-website-pvw.jpg"
-                             alt="">
-
-                        <p>Novo website pessoal bla bla bla bla bla bla bla bla bla bla bla bla  bla bla bla
-                            bla bla bla </p>
-
-                        <ul class="list-inline">
-
-                            <li>Data: Julho 2016</li>
-                            <li>Cliente: Patrícia Lourenço</li>
-                            <li>Categoria: Web design</li>
+                            <li><a target="_blank" href="https://github.com/pamlourenco21"><i class="fa fa-github-alt"></i></a></li>
 
                         </ul>
-
-
-                        <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>
-                            Close Project
-
-                        </button>
 
                     </div>
 
@@ -956,231 +859,28 @@
 
     </div>
 
-</div>-->
 
-<!---------------------------------------- Portfolio Modal 3 ------------------------------------------------->
-<!--<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <!------------------------------------------- Footer ------------------------------------------------>
+    <footer id="footer">
 
-    <div class="modal-content">
+        <div class="row">
 
-        <div class="close-modal" data-dismiss="modal">
+            <div class="col-md-4">
 
-            <div class="lr">
-
-                <div class="rl"></div>
-
+                <span class="copyright">Copyright &copy;
+                    <a href="#header" class="page-scroll">Patrícia Lourenço </a>2016
+                </span>
 
             </div>
 
         </div>
 
-        <div class="container">
+    </footer>
 
-            <div class="row">
 
-                <div class="col-lg-8 col-lg-offset-2">
+</section>
 
-                    <div class="modal-body">
 
-                        <!-- Project Details Go Here -->
-<!--<h2>Website</h2>
-
-<p class="item-intro text-muted">website</p>
-
-<img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.png" alt="">
-
-<p>bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla </p>
-
-<ul class="list-inline">
-
-    <li>Data: Dezembro 2015</li>
-    <li>Cliente: Patrícia Lourenço</li>
-    <li>Categoria: Web design</li>
-
-</ul>
-
-<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>
-    Close Project
-</button>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<!--------------------------------------- Portfolio Modal 4 ------------------------------------------------>
-<!--<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-
-    <div class="modal-content">
-
-        <div class="close-modal" data-dismiss="modal">
-
-            <div class="lr">
-                <div class="rl"></div>
-
-            </div>
-
-        </div>
-
-        <div class="container">
-
-            <div class="row">
-
-                <div class="col-lg-8 col-lg-offset-2">
-
-                    <div class="modal-body">
-
-                        <!-- Project Details Go Here -->
-<!-- <h2>Logotipo</h2>
-
- <p class="item-intro text-muted">Patrícia Lourenço</p>
-
- <img class="img-responsive img-centered" src="img/portfolio/pl-logo-preview.png" alt="">
-
- <p>Logotipo, bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-     bla bla bla </p>
-
- <ul class="list-inline">
-
-     <li>Data: Março 2016</li>
-     <li>Cliente: Patrícia Lourenço</li>
-     <li>Categoria: Design Gráfico</li>
-
- </ul>
-
- <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>
-     Close Project
- </button>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<!---------------------------------------------- Portfolio Modal 5 ---------------------------------------->
-<!--<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-
-    <div class="modal-content">
-
-        <div class="close-modal" data-dismiss="modal">
-
-            <div class="lr">
-                <div class="rl"></div>
-
-            </div>
-        </div>
-
-        <div class="container">
-
-            <div class="row">
-
-                <div class="col-lg-8 col-lg-offset-2">
-
-                    <div class="modal-body">
-
-                        <!-- Project Details Go Here -->
-<!-- <h2>Logotipo</h2>
-
- <p class="item-intro text-muted">Bruno Melo</p>
-
- <img class="img-responsive img-centered" src="img/portfolio/bm-logo-preview.png" alt="">
-
- <p>Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla
-     Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla </p>
-
- <ul class="list-inline">
-
-     <li>Data: Dezembro 2015</li>
-     <li>Cliente: <a href="">Bruno Melo</a></li>
-     <li>Categoria: Design Gráfico</li>
-
- </ul>
-
- <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>
-     Close Project
- </button>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<!--------------------------------------- Portfolio Modal 6 ----------------------------------------------->
-<!--<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-
-    <div class="modal-content">
-
-        <div class="close-modal" data-dismiss="modal">
-
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-
-        </div>
-
-        <div class="container">
-
-            <div class="row">
-
-                <div class="col-lg-8 col-lg-offset-2">
-
-                    <div class="modal-body">
-
-                        <!-- Project Details Go Here -->
-<!--<h2>Logotipo</h2>
-
-<p class="item-intro text-muted">Filipe Garcia</p>
-
-<img class="img-responsive img-centered" src="img/portfolio/fg-logo-preview.png" alt="">
-
-<p>bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla </p>
-
-<ul class="list-inline">
-
-    <li>Data: Setembro 2014</li>
-    <li>Cliente: <a href="">Filipe Garcia</a></li>
-    <li>Categoria: Design Gráfico</li>
-
-</ul>
-
-<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>
-    Close Project
-</button>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
 
 
 <!-- jQuery -->

@@ -24,3 +24,8 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+// if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
+//     var $el = $('[data-parallax="scroll"]');
+//     $el.attr('data-parallax', '')
+// }

@@ -59,6 +59,38 @@
 }
 
 
+#social-cont {
+  text-align: center;
+  margin-top: 20px;
+  .social-buttons {
+    margin-bottom: 0;
+    li {
+      a {
+        display: block;
+        background-color: transparent;
+        height: 40px;
+        width: 40px;
+        border: 1px solid white;
+        border-radius: 14px;
+        font-size: 20px;
+        line-height: 40px;
+        color: white;
+        outline: none;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: @brand-primary;
+          color: white;
+          border: 1px solid @brand-primary;
+        }
+      }
+    }
+  }
+}
+
 
 // Footer
 
