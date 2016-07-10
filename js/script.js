@@ -25,10 +25,10 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
-if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
-    var $el = $('[data-parallax="scroll"].parallax-fix');
-    $el.each(function(pos) {
-        var $newEl = $el[pos];
-        $newEl.innerHTML = '<div class="parallax-overlay-fix">' + $newEl.innerHTML + '</div>';
-    });
-}
+// if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
+//     var $el = $('[data-parallax="scroll"].parallax-fix');
+//     $el.each(function(pos) {
+//         var $newEl = $el[pos];
+//         $newEl.innerHTML = '<div class="parallax-overlay-fix">' + $newEl.innerHTML + '</div>';
+//     });
+// }
