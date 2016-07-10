@@ -18,14 +18,17 @@ $(function() {
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({
     target: '.navbar-fixed-top'
-})
+});
 
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
-// if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
-//     var $el = $('[data-parallax="scroll"]');
-//     $el.attr('data-parallax', '')
-// }
+if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
+    var $el = $('[data-parallax="scroll"].parallax-fix');
+    $el.each(function(pos) {
+        var $newEl = $el[pos];
+        $newEl.innerHTML = '<div class="parallax-overlay-fix">' + $newEl.innerHTML + '</div>';
+    });
+}
