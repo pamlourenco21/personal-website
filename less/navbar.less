@@ -14,11 +14,12 @@
       display: none;
     }
   }
+
   .navbar-collapse {
     border: none;
   }
+
   .navbar-toggle {
-    //background-color: transparent;
     border: none;
 
     .fa {
@@ -26,7 +27,6 @@
     }
 
     &:not(.collapsed) {
-      //background-color: transparent;
 
       .fa {
         color: @brand-primary !important;
@@ -34,32 +34,24 @@
 
     }
 
-    &:hover {
-      background-color: transparent;
-
-      .fa {
-        color: white;
-      }
-    }
-    &:focus {
-      background-color: transparent;
-
-      .fa {
-        color: white;
-      }
-    }
+    &:hover,
+    &:focus,
     &:visited {
       background-color: transparent;
 
       .fa {
         color: white;
       }
+
     }
+
   }
 
   .nav {
+
     li {
       height: 52px;
+
       a {
         color: white;
         text-transform: uppercase;
@@ -70,26 +62,34 @@
           color: white;
           outline: none;
         }
+
         &:focus {
           color: white;
           outline: none;
         }
+
       }
+
       &.active {
         a {
           border-bottom: 2px solid @brand-primary;
         }
+
       }
+
     }
+
   }
 
   .navbar-nav > .active > a {
     background-color: transparent;
   }
+
   .navbar-nav > .active > a:hover,
   .navbar-nav > .active > a:focus {
     background-color: transparent;
   }
+
 }
 
 //Navbar-Shrink
@@ -107,11 +107,10 @@
       color: @brand-primary;
       font-family: 'Architects Daughter', sans-serif;
     }
+
   }
 
-
   .navbar-toggle {
-    //background-color: transparent;
     border: none;
 
     .fa {
@@ -127,65 +126,64 @@
 
     }
 
-    &:hover {
-      background-color: transparent;
-
-      .fa {
-        color: black;
-      }
-    }
-    &:focus {
-      background-color: transparent;
-
-      .fa {
-        color: black;
-      }
-    }
+    &:hover,
+    &:focus,
     &:visited {
       background-color: transparent;
 
       .fa {
-        color: white;
+        color: black;
       }
+
     }
+
   }
+
   .nav {
+
     li {
       height: 52px;
+
       a {
         color: black;
-        &:hover {
+
+        &:hover,
+        &:focus,
+        &.active {
           color: black;
           outline: none;
         }
-        &:focus {
-          color: black;
-          outline: none;
-        }
+
       }
-      &.active {
-        a {
-          color: black;
-        }
-      }
+
     }
+
   }
+
 }
 
-//Media queries
 
+
+
+//Media queries
 
 //Medium
 
 @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+
   .navbar-default {
+
     .navbar-brand {
       background: url('../img/logos/white-logo.png') no-repeat center;
+
       #pl {
         display: none;
       }
+
     }
+
   }
+
   .navbar-default.navbar-shrink {
 
     .navbar-brand {
@@ -194,22 +192,32 @@
       #pl {
         display: none;
       }
+
     }
+
   }
-  
+
 }
+
+
 
 //Small
 
 @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+
   .navbar-default {
+
     .navbar-brand {
       background: url('../img/logos/white-logo.png') no-repeat center;
+
       #pl {
         display: none;
       }
+
     }
+
   }
+
   .navbar-default.navbar-shrink {
 
     .navbar-brand {
@@ -218,13 +226,19 @@
       #pl {
         display: none;
       }
+
     }
+
   }
+
 }
+
+
 
 //XSmall
 
 @media (max-width: @screen-xs-max) {
+
   .navbar-default {
 
     .navbar-brand {
@@ -245,12 +259,15 @@
       color: black;
       border-bottom: none;
     }
+
     .navbar-nav > .active > a:hover,
     .navbar-nav > .active > a:focus {
       color: @brand-primary;
       border-bottom: none;
     }
+
     .nav {
+
       li {
         a {
           &:hover,
@@ -258,53 +275,80 @@
             color: @brand-primary;
             border-bottom: none;
           }
+
         }
+
         &.active {
+
           a {
             color: @brand-primary;
             border-bottom: none;
           }
+
         }
+
       }
+
     }
+
   }
 
   .navbar-default.navbar-shrink {
+
     .navbar-brand {
       background: url("../img/logos/black-logo.png") no-repeat center;
+
       #pl {
         display: none;
       }
+
     }
+
     .navbar-collapse {
       background-color: white;
     }
+
     .navbar-toggle {
+
       .fa {
         color: black;
       }
+
       &:not(.collapsed) {
         background-color: transparent;
+
         .fa {
           color: @brand-primary !important;
         }
+
       }
+
     }
+
     .nav {
+
       li {
+
         a {
           &:hover,
           &:focus {
             color: @brand-primary;
             outline: none;
           }
+
         }
+
         &.active {
           a {
             color: @brand-primary;
           }
+
         }
+
       }
+
     }
+
   }
+
 }

@@ -1,7 +1,7 @@
 //Global Components
+
 html {
   height: 100%;
-
 }
 
 body {
@@ -16,25 +16,27 @@ h1, h2, h3, h4, h5, h6 {
 p {
   font-size: 14px;
   line-height: 1.75;
-
 }
 
 a {
   text-decoration: none;
+
   &:hover {
     text-decoration: none;
   }
-}
-
-.heading-section {
-  font-size: 40px;
-  margin-bottom: 50px;
-  margin-top: 64px;
 
 }
 
 section {
   margin: 60px 0;
+}
+
+//Heading-Section
+
+.heading-section {
+  font-size: 40px;
+  margin-bottom: 50px;
+  margin-top: 64px;
 }
 
 @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
@@ -62,6 +64,19 @@ section {
   }
 
 }
+
+
+//Background-cover
+
+.background-cover() {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+
+//Parallax
 
 .parallax-overlay-fix {
   position: absolute;

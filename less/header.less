@@ -17,12 +17,10 @@
       padding-left: 15px;
     }
 
-
     #header-subtitle {
       color: white;
       text-align: center;
       font-size: 20px;
-      //margin-bottom: 35px;
     }
 
     .btn {
@@ -78,33 +76,38 @@
       padding-left: 20px;
     }
   }
+}
 
-  //Small
-  @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+//Small
 
-    #header {
-      padding-top: 300px;
-      padding-bottom: 200px;
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
 
-      #header-txt {
-        margin-top: 15px;
+  #header {
+    padding-top: 300px;
+    padding-bottom: 200px;
 
-        #header-canvas {
-          width: 100%;
-          height: auto;
-          margin: 0 auto;
-          padding-left: 15px;
-        }
+    #header-txt {
+      margin-top: 15px;
 
-        #header-subtitle {
-          font-size: 15px;
-        }
+      #header-canvas {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-left: 15px;
       }
+
+      #header-subtitle {
+        font-size: 15px;
+      }
+
     }
+
   }
+
 }
 
 //Xsmall
+
 @media (max-width: @screen-xs-max) {
 
   #header {
@@ -124,8 +127,11 @@
       #header-subtitle {
         font-size: 15px;
       }
+
     }
+
   }
+
 }
 
 
