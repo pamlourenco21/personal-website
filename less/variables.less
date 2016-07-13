@@ -6,3 +6,47 @@
 @gray: #777;
 @gray-lighter: #f7f7f7;
 @placeholder-text: #bbbbbb;
+
+
+
+/*parallax*/
+
+.cont{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  perspective: 1px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.group1 {
+  height: 1000px;
+  position: relative;
+  transform-style: preserve-3d;
+  font-size: 20px;
+}
+
+
+.background {
+  transform: translateZ(-1px) scale(2);
+  height: 500px;
+  width: 100%;
+  position: absolute;
+  top: calc(250px - 50vh);
+
+  padding-top: 100px;
+
+}
+
+.foreground {
+  position: absolute;
+  top: 500px;
+  height: 500px;
+  width: 100%;
+
+  opacity: 0.8;
+  padding-top: 100px;
+}
