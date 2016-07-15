@@ -87,32 +87,21 @@
 
 <!--- Header -->
 
-<header id="header" data-parallax="scroll" data-image-src="img/parallax/header-bg.jpeg">
+<header id="header" class="slide">
 
-    <div class="container">
 
-        <div class="row">
+    <div id="header-txt">
 
-            <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+        <canvas id="header-canvas" width="762"></canvas>
 
-                <div id="header-txt">
+        <h1 id="header-subtitle">Bem vindo ao meu website!</h1>
 
-                    <canvas id="header-canvas" width="762"></canvas>
+        <a href="#about" class="page-scroll btn btn-default">
 
-                    <h1 id="header-subtitle">Bem vindo ao meu website!</h1>
+            <i id="header-dwn" class="wow slideOutDown infinite fa fa-angle-down"
+               data-wow-delay="0.2s"></i>
 
-                    <a href="#about" class="page-scroll btn btn-default">
-
-                        <i id="header-dwn" class="wow slideOutDown infinite fa fa-angle-double-down"
-                           data-wow-delay="0.2s"></i>
-
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
+        </a>
 
     </div>
 
@@ -260,7 +249,7 @@
 </section>
 
 
-                                                                                              <!-- Interests Section -->
+<!-- Interests Section -->
 
 <section id="interests">
 
@@ -269,95 +258,34 @@
         <div class="row">
 
             <!-- Web Design -->
-            <div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12">
 
-                <a href="#portfolio" class="interest-link page-scroll">
-
-                    <div id="webdes" class="interests parallax-fix" data-parallax="scroll" data-speed="0.5"
-                         data-image-src="img/parallax/webdes.jpg">
-
-                        <img src="img/parallax/webdes.jpg" class="parallax-overlay-fix img-responsive"/>
-
-                        <h4 class="txt-interest">Web Design</h4>
-
-                        <br/>
-
-                        <p class="txt-interest">Clica para ver alguns dos meus trabalhos.</p>
-
-                    </div>
-
-                </a>
-
-            </div>
-
-            <!-- Cats -->
-            <div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12">
-
-                <a target="_blank" href="https://www.instagram.com/2littleballsoffur/" class="interest-link">
-
-                    <div id="cats" class="interests parallax-fix" data-parallax="scroll" data-speed="0.2"
-                         data-image-src="img/parallax/cats.jpg">
-
-                        <img src="img/parallax/cats.jpg" class="parallax-overlay-fix img-responsive"/>
-
-                        <h4 class="txt-interest">Mia & Kika</h4>
-
-                        <br/>
-
-                        <p class="txt-interest">As minhas companheiras! As suas aventuras podem ser seguidas no
-                            Instagram!
-
-                            <br/>
-
-                            <i class="fa fa-instagram fa-3x"></i>
-
-                        </p>
+            <div id="webdes" class="col col-lg-6 col-md-6 col-sm-6 col-xs-12">
 
 
-                    </div>
+                <div class="interests wow fadeIn" data-wow-delay="1.5s">
 
-                </a>
+                    <h4 class="txt-interest">Web Design</h4>
 
-            </div>
+                    <p class="txt-interest">Clica para ver alguns dos meus trabalhos.</p>
 
+                    <a href="#portfolio" id="portlink" class="interest-link page-scroll btn btn-default">
 
-        </div>
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
 
+                    </a>
 
-        <div class="row">
+                </div>
 
-            <!-- Fashion -->
-            <div class=" col col-lg-6 col-md-6 col-sm-6 col-xs-12">
-
-                <a class="interest-link">
-
-                    <div id="fashion" class="interests parallax-fix" data-parallax="scroll" data-speed="0.8"
-                         data-image-src="img/parallax/fashion.jpeg">
-
-                        <img src="img/parallax/fashion.jpeg" class="parallax-overlay-fix img-responsive"/>
-
-                        <h4 class="txt-interest">Moda </h4>
-
-                        <br/>
-
-                        <p class="txt-interest">Gosto de estar atualizada sobre as novas
-                            tendências e adaptar ao meu estilo.</p>
-
-                    </div>
-
-                </a>
 
             </div>
 
             <!-- Tech -->
-            <div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12">
+
+            <div id="tech" class="col col-lg-6 col-md-6 col-sm-6 col-xs-12">
 
                 <a class="interest-link">
 
-                    <div id="foto" class="interests parallax-fix" data-parallax="scroll" data-speed="0.5"
-                         data-image-src="img/parallax/fashion.jpeg">
-
-                        <img src="img/parallax/tech.jpg" class="parallax-overlay-fix img-responsive"/>
+                    <div class="interests wow fadeIn" data-wow-delay="1.7s">
 
                         <h4 class="txt-interest">Tecnologia</h4>
 
@@ -373,7 +301,64 @@
             </div>
 
 
+
+
         </div>
+
+
+        <div class="row">
+
+            <!-- Fashion -->
+            <div id="fashion" class=" col col-lg-6 col-md-6 col-sm-6 col-xs-12">
+
+                <a class="interest-link">
+
+                    <div class="interests wow fadeIn" data-wow-delay="2.3s">
+
+                        <h4 class="txt-interest">Moda </h4>
+
+                        <br/>
+
+                        <p class="txt-interest">Gosto de estar atualizada sobre as novas
+                            tendências e adaptar ao meu estilo.</p>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+
+            <!-- Cats -->
+
+            <div id="cats" class="col col-lg-6 col-md-6 col-sm-6 col-xs-12">
+
+
+                <div class="interests wow fadeIn" data-wow-delay="2.7s">
+
+
+                    <h4 class="txt-interest">Mia & Kika</h4>
+
+                    <p class="txt-interest">As minhas companheiras! As suas aventuras podem ser seguidas no
+                        Instagram!</p>
+
+                    <a target="_blank" href="https://www.instagram.com/2littleballsoffur/"
+                       class="interest-link btn btn-default">
+
+                        <i class="fa fa-instagram"></i>
+
+                    </a>
+
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
 
 
     </div>
@@ -381,7 +366,7 @@
 </section>
 
 
-                                                                                               <!-- Timeline Section -->
+<!-- Timeline Section -->
 
 <section id="timeline">
 
@@ -1051,7 +1036,7 @@
 
 
 <!--------------------------------------------- Footer & Contact Section ------------------------------------------>
-<section id="contfoot" data-parallax="scroll" data-image-src="img/parallax/contact.jpg">
+<section id="contfoot">
 
     <!---------------------------------------- Contact -------------------------------------------------->
     <div id="contact">

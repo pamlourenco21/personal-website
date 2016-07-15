@@ -3,6 +3,7 @@
 #contfoot {
   margin: 0;
   background: url('../img/parallax/contact.jpg') no-repeat center;
+  background-attachment: fixed;
   .background-cover;
 }
 
@@ -122,6 +123,17 @@
       }
 
     }
+
+  }
+
+}
+
+
+@media (max-width: @screen-xs-max) {
+
+  #contfoot {
+
+    background-attachment: scroll;
 
   }
 
