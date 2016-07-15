@@ -32,3 +32,11 @@ $('.navbar-collapse ul li a').click(function() {
 //         $newEl.innerHTML = '<div class="parallax-overlay-fix">' + $newEl.innerHTML + '</div>';
 //     });
 // }
+
+
+
+// Preloader
+jQuery(window).load(function () {
+    jQuery("#preloader").delay(100).fadeOut("slow");
+    jQuery("#load").delay(100).fadeOut("slow");
+});
