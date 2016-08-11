@@ -7,8 +7,8 @@
 
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
-    $('a.page-scroll').bind('click', function(event) {
+$(function () {
+    $('a.page-scroll').bind('click', function (event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
@@ -18,28 +18,16 @@ $(function() {
 });
 
 
-
-
-
-
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({
     target: '.navbar-fixed-top'
 });
 
 
-
-
-
 // Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
+$('.navbar-collapse ul li a').click(function () {
     $('.navbar-toggle:visible').click();
 });
-
-
-
-
-
 
 
 // Preloader
@@ -47,3 +35,17 @@ jQuery(window).load(function () {
     jQuery("#preloader").delay(100).fadeOut("slow");
     jQuery("#load").delay(100).fadeOut("slow");
 });
+
+
+
+
+//Mobile animation remove
+
+if ($(window).width() < 768) {
+    $(".timeline li").removeClass("wow");
+    $(".work-item").removeClass("wow");
+
+} else {
+    $(".timeline li").addClass("wow");
+    $(".work-item").addClass("wow");
+}
