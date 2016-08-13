@@ -37,15 +37,30 @@ jQuery(window).load(function () {
 });
 
 
-
-
 //Mobile animation remove
 
-if ($(window).width() < 768) {
-    $(".timeline li").removeClass("wow");
-    $(".work-item").removeClass("wow");
+(function () {
+    var s = window.matchMedia('(min-width: 767px)');
 
-} else {
-    $(".timeline li").addClass("wow");
-    $(".work-item").addClass("wow");
-}
+    function placeIntro() {
+        if (s.matches) {
+            $('.timeline li').addClass('wow');
+            $('.work-item').addClass('wow');
+        } else {
+            $('.timeline li').removeClass('wow');
+            $('.work-item').removeClass('wow');
+        }
+    }
+
+    placeIntro();
+    window.addEventListener('resize', placeIntro)
+})();
+
+
+
+
+
+
+
+
+
